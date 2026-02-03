@@ -322,15 +322,15 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <figure class="image is-4by3 architecture-figure">
+        <h2 class="title is-3 has-text-centered">Overall Architecture</h2>
+        <figure class="image architecture-figure" style="margin-top: 1rem;">
           <!-- TODO: Replace with your high-resolution pipeline illustration -->
-          <img src="static/images/mainfigure.jpg" alt="SuReNav pipeline from superpixel graph construction to navigation execution" loading="lazy">
+          <img src="static/images/mainfigure.jpg" alt="SuReNav pipeline from superpixel graph construction to navigation execution" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
           <figcaption class="has-text-centered is-size-6 has-text-grey">
             Overview of SuReNav: superpixel graph map, constraint relaxation via GNN, and closed-loop planning.
           </figcaption>
         </figure>
-        <h2 class="title is-3 has-text-centered" style="margin-top: 1.5rem;">Overall Architecture</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified" style="margin-top: 1.25rem;">
           <p>
             SuReNav automatically relaxes regional constraints while planning a graph path $\mathcal{X}_G$ in semi-static navigation environments. (a) In the training phase, SuReNav generates a superpixel graph from a 2-dimensional map with safety-relevant semantic features. A neural relaxation cost estimator $\Psi_G$ then computes a node-wise relaxation cost, which is incorporated as an optimization term in a differentiable search process. This enables end-to-end training of the model from human demonstrations. (b) During the planning phase, the estimator generates node-wise relaxation costs, and a discrete graph search process selects regions to relax, inducing an admissible space to facilitate path planning.
           </p>
