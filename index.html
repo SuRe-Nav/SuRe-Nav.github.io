@@ -76,7 +76,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>SuReNav</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -234,7 +234,7 @@
                     <!-- TODO: Replace with your institution and conference/journal info -->
                     <span class="author-block">Korea Advanced Institute of Science and Technology<br>ICRA 2026</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates the corresponding author</small></span>
+                    <span class="eql-cntrb"><br><sup>*</sup>Indicates the corresponding author</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -291,7 +291,7 @@
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Different navigation results in semi-static real-world environments using our proposed SuReNav method.
+        Different navigation results in semi-static real-world environments using SuReNav.
       </h2>
     </div>
   </div>
@@ -318,10 +318,10 @@
 
 
 <!-- Overall architecture -->
-<section class="section">
+<section class="section" id="overall-architecture">
   <div class="container is-max-desktop">
-    <div class="columns is-vcentered is-variable is-6" id="overall-architecture">
-      <div class="column is-5">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
         <figure class="image is-4by3 architecture-figure">
           <!-- TODO: Replace with your high-resolution pipeline illustration -->
           <img src="static/images/mainfigure.jpg" alt="SuReNav pipeline from superpixel graph construction to navigation execution" loading="lazy">
@@ -329,12 +329,10 @@
             Overview of SuReNav: superpixel graph map, constraint relaxation via GNN, and closed-loop planning.
           </figcaption>
         </figure>
-      </div>
-      <div class="column">
-        <h2 class="title is-3">Overall Architecture</h2>
+        <h2 class="title is-3 has-text-centered" style="margin-top: 1.5rem;">Overall Architecture</h2>
         <div class="content has-text-justified">
           <p>
-            SuReNav automatically relaxes regional constraints while planning a graph path $\\mathcal{X}_G$ in semi-static navigation environments. (a) In the training phase, SuReNav generates a superpixel graph from a 2-dimensional map with safety-relevant semantic features. A neural relaxation cost estimator $\\Psi_G$ then computes a node-wise relaxation cost, which is incorporated as an optimization term in a differentiable search process. This enables end-to-end training of the model from human demonstrations. (b) During the planning phase, the estimator generates node-wise relaxation costs, and a discrete graph search process selects regions to relax, inducing an admissible space to facilitate path planning.
+            SuReNav automatically relaxes regional constraints while planning a graph path $\mathcal{X}_G$ in semi-static navigation environments. (a) In the training phase, SuReNav generates a superpixel graph from a 2-dimensional map with safety-relevant semantic features. A neural relaxation cost estimator $\Psi_G$ then computes a node-wise relaxation cost, which is incorporated as an optimization term in a differentiable search process. This enables end-to-end training of the model from human demonstrations. (b) During the planning phase, the estimator generates node-wise relaxation costs, and a discrete graph search process selects regions to relax, inducing an admissible space to facilitate path planning.
           </p>
         </div>
       </div>
@@ -345,41 +343,41 @@
 
 
 <!-- Qualitative results -->
-<section class="section hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
-      <div class="columns is-multiline is-variable is-5">
-        <div class="column is-half">
+      <div id="qualitative-carousel" class="carousel results-carousel">
+        <div class="item">
           <figure class="image">
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example1_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 1 caption placeholder.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 1.</figcaption>
           </figure>
         </div>
-        <div class="column is-half">
+        <div class="item">
           <figure class="image">
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example2_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 2 caption placeholder.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 2.</figcaption>
           </figure>
         </div>
-        <div class="column is-half">
+        <div class="item">
           <figure class="image">
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example3_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 3 caption placeholder.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 3.</figcaption>
           </figure>
         </div>
-        <div class="column is-half">
+        <div class="item">
           <figure class="image">
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example4_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 4 caption placeholder.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 4.</figcaption>
           </figure>
         </div>
       </div>
