@@ -321,10 +321,10 @@
 <section class="hero is-small" id="overall-architecture">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">Overall Architecture</h2>
+      <h2 class="title is-3">Overall Architecture</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-12">
-          <figure class="image architecture-figure" style="margin: 1rem auto 0; width: 120%; max-width: 1400px;">
+          <figure class="image architecture-figure" style="margin: 1rem auto 0; width: 120%; max-width: 1200px;">
             <!-- TODO: Replace with your high-resolution pipeline illustration -->
             <img src="static/images/mainfigure.jpg" alt="SuReNav pipeline from superpixel graph construction to navigation execution" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
           </figure>
@@ -345,7 +345,7 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+      <h2 class="title is-3">Qualitative Results</h2>
       <div id="qualitative-carousel" class="carousel results-carousel">
         <div class="item">
           <figure class="image">
@@ -392,100 +392,32 @@
       <h2 class="title is-3">Quantitative Results</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-10">
-          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 1200px;">
+          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 800px;">
             <img src="static/images/quantitative_1.png" alt="Quantitative results figure 1" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
           </figure>
-          <p class="has-text-centered is-size-6 has-text-grey">Description for quantitative figure 1 goes here.</p>
+          <div class="content has-text-justified" style="margin-top: 1.25rem;">
+            <p>
+              Human-likeness evaluation results on 2D semantic maps. SuReNav achieves the highest human-likeness score compared to baselines.
+            </p>
+          </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered" style="margin-top: 1.5rem;">
         <div class="column is-10">
-          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 1200px;">
+          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 800px;">
             <img src="static/images/quantitative_2.png" alt="Quantitative results figure 2" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
           </figure>
-          <p class="has-text-centered is-size-6 has-text-grey">Description for quantitative figure 2 goes here.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End quantitative results -->
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="content has-text-justified" style="margin-top: 1.25rem;">
+            <p>
+              Safety-efficiency trade-off evaluation results on 2D semantic maps and 3D OSM maps. SuReNav demonstrates balanced trade-off between safety and efficiency compared to baselines.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
+<!-- End quantitative results -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
