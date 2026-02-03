@@ -6,26 +6,26 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="SuReNav: Superpixel Graph-based Constraint Relaxation for Navigation in Over-constrained Environments - Keonyoung Koh, Moonkyeong Jung, Seungsup Lee, Daehyung Park">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Keonyoung Koh, Moonkyeong Jung, Seungsup Lee, Daehyung Park">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="RIRO Lab, KAIST">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="SuReNav: Superpixel Graph-based Constraint Relaxation for Navigation in Over-constrained Environments">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:url" content="https://sure-nav.github.io/">
   <!-- TODO: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
@@ -52,11 +52,13 @@
   <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_title" content="SuReNav: Superpixel Graph-based Constraint Relaxation for Navigation in Over-constrained Environments">
+  <meta name="citation_author" content="Koh, Keonyoung">
+  <meta name="citation_author" content="Jung, Moonkyeong">
+  <meta name="citation_author" content="Lee, Seungsup">
+  <meta name="citation_author" content="Park, Daehyung">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="ICRA">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
   
   <!-- Additional SEO -->
@@ -108,6 +110,28 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
+  <!-- Math rendering for LaTeX-style equations -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$","$"], ["\\(","\\)"]],
+        displayMath: [["$$","$$"], ["\\[","\\]"]]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Math rendering for LaTeX-style equations -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$","$"], ["\\(","\\)"]],
+        displayMath: [["$$","$$"], ["\\[","\\]"]]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
@@ -186,54 +210,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
@@ -241,30 +217,31 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">SuReNav: Superpixel Graph-based Constraint Relaxation for Navigation in Over-constrained Environments</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="https://rirolab.kaist.ac.kr/people">Keonyoung Koh</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="https://rirolab.kaist.ac.kr/people">Moonkyeong Jung</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="https://rirolab.kaist.ac.kr/people">Seungsup Lee</a>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="https://sites.google.com/site/daehyungpark">Daehyung Park</a><sup>*</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Korea Advanced Institute of Science and Technology<br>ICRA 2026</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates the corresponding author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/<TODO>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -273,20 +250,9 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/TODO" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -297,7 +263,7 @@
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/<TODO>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -321,11 +287,11 @@
       <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+        <source src="static/videos/overall_1_lowres.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Different navigation results in semi-static real-world environments using our proposed SuReNav method.
       </h2>
     </div>
   </div>
@@ -341,7 +307,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We address the over-constrained planning problem in semi-static environments. The planning objective is to find a best-effort solution that avoids all hard constraint regions while minimally traversing the least risky areas. Conventional methods often rely on pre-defined area costs, limiting generalizations. Further, the spatial continuity of navigation spaces makes it difficult to identify regions that are passable without overestimation. To overcome these challenges, we propose SuReNav, a superpixel graph-based constraint relaxation and navigation method that imitates human-like safe and efficient navigation. Our framework consists of three components: 1) superpixel graph map generation with regional constraints, 2) regional-constraint relaxation using graph neural network trained on human demonstrations for safe and efficient navigation, and 3) interleaving relaxation, planning, and execution for complete navigation. We evaluate our method against state-of-the-art baselines on 2D semantic maps and 3D maps from OpenStreetMap, achieving the highest human-likeness score of complete navigation while maintaining a balanced trade-off between efficiency and safety. We finally demonstrate its scalability and generalization performance in real-world urban navigation with a quadruped robot, Spot.
           </p>
         </div>
       </div>
@@ -351,45 +317,76 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Overall architecture -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered is-variable is-6" id="overall-architecture">
+      <div class="column is-5">
+        <figure class="image is-4by3 architecture-figure">
+          <!-- TODO: Replace with your high-resolution pipeline illustration -->
+          <img src="static/images/mainfigure.jpg" alt="SuReNav pipeline from superpixel graph construction to navigation execution" loading="lazy">
+          <figcaption class="has-text-centered is-size-6 has-text-grey">
+            Overview of SuReNav: superpixel graph map, constraint relaxation via GNN, and closed-loop planning.
+          </figcaption>
+        </figure>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      <div class="column">
+        <h2 class="title is-3">Overall Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            SuReNav automatically relaxes regional constraints while planning a graph path $\\mathcal{X}_G$ in semi-static navigation environments. (a) In the training phase, SuReNav generates a superpixel graph from a 2-dimensional map with safety-relevant semantic features. A neural relaxation cost estimator $\\Psi_G$ then computes a node-wise relaxation cost, which is incorporated as an optimization term in a differentiable search process. This enables end-to-end training of the model from human demonstrations. (b) During the planning phase, the estimator generates node-wise relaxation costs, and a discrete graph search process selects regions to relax, inducing an admissible space to facilitate path planning.
+          </p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End overall architecture -->
+
+
+<!-- Qualitative results -->
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+      <div class="columns is-multiline is-variable is-5">
+        <div class="column is-half">
+          <figure class="image">
+            <video poster="" controls muted loop preload="metadata">
+              <source src="static/videos/example1_1_lowres.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 1 caption placeholder.</figcaption>
+          </figure>
+        </div>
+        <div class="column is-half">
+          <figure class="image">
+            <video poster="" controls muted loop preload="metadata">
+              <source src="static/videos/example2_1_lowres.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 2 caption placeholder.</figcaption>
+          </figure>
+        </div>
+        <div class="column is-half">
+          <figure class="image">
+            <video poster="" controls muted loop preload="metadata">
+              <source src="static/videos/example3_1_lowres.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 3 caption placeholder.</figcaption>
+          </figure>
+        </div>
+        <div class="column is-half">
+          <figure class="image">
+            <video poster="" controls muted loop preload="metadata">
+              <source src="static/videos/example4_1_lowres.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Example 4 caption placeholder.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End qualitative results -->
 
 
 
