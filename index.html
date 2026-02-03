@@ -318,7 +318,7 @@
 
 
 <!-- Overall architecture -->
-<section class="hero is-small is-light" id="overall-architecture">
+<section class="hero is-small" id="overall-architecture">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Overall Architecture</h2>
@@ -327,13 +327,10 @@
           <figure class="image architecture-figure" style="margin: 1rem auto 0; width: 120%; max-width: 1400px;">
             <!-- TODO: Replace with your high-resolution pipeline illustration -->
             <img src="static/images/mainfigure.jpg" alt="SuReNav pipeline from superpixel graph construction to navigation execution" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
-            <figcaption class="has-text-centered is-size-6 has-text-grey">
-              Overview of proposed SuReNav's framework.
-            </figcaption>
           </figure>
           <div class="content has-text-justified" style="margin-top: 1.25rem;">
             <p>
-              SuReNav automatically relaxes regional constraints while planning a graph path $\mathcal{X}_G$ in semi-static navigation environments. (a) In the training phase, SuReNav generates a superpixel graph from a 2-dimensional map with safety-relevant semantic features. A neural relaxation cost estimator $\Psi_G$ then computes a node-wise relaxation cost, which is incorporated as an optimization term in a differentiable search process. This enables end-to-end training of the model from human demonstrations. (b) During the planning phase, the estimator generates node-wise relaxation costs, and a discrete graph search process selects regions to relax, inducing an admissible space to facilitate path planning.
+              Overview architecture of SuReNav that automatically relaxes regional constraints while planning a graph path $\mathcal{X}_G$ in semi-static navigation environment. (a) In the training phase, SuReNav generates a superpixel graph from a 2-dimensional map with safety-relevant semantic features. A neural relaxation cost estimator $\Psi_G$ then computes a node-wise relaxation cost, which is incorporated as an optimization term in a differentiable search process. This enables end-to-end training of the model from human demonstrations. (b) During the planning phase, the estimator generates node-wise relaxation costs, and a discrete graph search process selects regions to relax, inducing an admissible space to facilitate path planning.
             </p>
           </div>
         </div>
@@ -345,7 +342,7 @@
 
 
 <!-- Qualitative results -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
@@ -355,7 +352,7 @@
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example1_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 1.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Real-world qualitative example 1. Relaxation occurs as unexpected obstacle generates semi-static, over-constrained situation.</figcaption>
           </figure>
         </div>
         <div class="item">
@@ -363,7 +360,7 @@
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example2_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 2.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Real-world qualitative example 2. Relaxation occurs as unexpected soft constraint area generates semi-static, over-constrained situation.</figcaption>
           </figure>
         </div>
         <div class="item">
@@ -371,7 +368,7 @@
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example3_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 3.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Real-world qualitative example 3. Surenav decides to make short detour in unexpected dynamic environment generates semi-static, over-constrained situation.</figcaption>
           </figure>
         </div>
         <div class="item">
@@ -379,7 +376,7 @@
             <video poster="" controls muted loop preload="metadata">
               <source src="static/videos/example4_1_lowres.mp4" type="video/mp4">
             </video>
-            <figcaption class="has-text-centered is-size-6 has-text-grey">Qualitative example 4.</figcaption>
+            <figcaption class="has-text-centered is-size-6 has-text-grey">Real-world qualitative example 4. Relaxation occurs as false information in prior knowledge generates semi-static, over-constrained situation.</figcaption>
           </figure>
         </div>
       </div>
@@ -388,8 +385,31 @@
 </section>
 <!-- End qualitative results -->
 
-
-
+<!-- Quantitative results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Quantitative Results</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-10">
+          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 1200px;">
+            <img src="static/images/quantitative_1.png" alt="Quantitative results figure 1" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
+          </figure>
+          <p class="has-text-centered is-size-6 has-text-grey">Description for quantitative figure 1 goes here.</p>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered" style="margin-top: 1.5rem;">
+        <div class="column is-10">
+          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 1200px;">
+            <img src="static/images/quantitative_2.png" alt="Quantitative results figure 2" loading="lazy" style="width: 100%; height: auto; object-fit: contain;">
+          </figure>
+          <p class="has-text-centered is-size-6 has-text-grey">Description for quantitative figure 2 goes here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End quantitative results -->
 
 <!-- Youtube video -->
 <section class="hero is-small is-light">
@@ -477,12 +497,11 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{koh2026surenav,
+  title={SuReNav: Superpixel Graph-based Constraint Relaxation for Navigation in Over-constrained Environments},
+  author={Koh, Keonyoung and Jung, Moonkyeong and Lee, Seungsup and Park, Daehyung},
+  journal={Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2026}
 }</code></pre>
     </div>
 </section>
